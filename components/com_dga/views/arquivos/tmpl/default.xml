@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+  <layout title="Arquivos">
+    <message>Object</message>
+  </layout>
+  <fields name="params">
+    <fieldset name="basic" label="Gerenciador de Arquivos">
+      <field name="dga_id_cat"
+             type="sql"
+             default="0"
+             label="Selecione uma categoria do produto"
+             description="Selecione uma Categoria para listar os arquivos"
+             query="SELECT '999' AS id_cat, '-- Todas --' AS nome_cat UNION SELECT id_cat, nome_cat FROM #__dga_categorias_cat"
+             key_field="id_cat"
+             value_field="nome_cat"/>
+      <field name="dga_mostrar_botao_categoria"
+            type="radio"
+            default="1"
+            required="false"
+            class="btn-group btn-group-yesno"
+            label="Mostrar botão Categoria?"
+            description="Se deseja mostrar botão Categoria." >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+      </field>
+    </fieldset>
+  </fields>
+</metadata>

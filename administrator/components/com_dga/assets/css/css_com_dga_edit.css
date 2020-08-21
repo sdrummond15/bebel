@@ -1,0 +1,38 @@
+.fieldsetGroup { 
+	position: relative !important; 
+	padding: 10px !important; 
+	margin-bottom: 10px !important;
+        margin-left: 0px !important;
+        margin-right: 10px !important;
+	background: #F6F6F6 !important; 
+	-webkit-border-radius: 8px !important; 
+	-moz-border-radius: 8px !important; 
+	border-radius: 8px; 
+	background: -webkit-gradient(linear, left top, left bottom, from(#EFEFEF), to(#FFFFFF)) !important; 
+	background: -moz-linear-gradient(center top, #EFEFEF, #FFFFFF 100%) !important; 
+}
+.fieldsetGroup legend { 
+        font-size: 14px !important;
+	padding: 2px !important; 
+	position: relative !important; 
+	background-color: #4F709F !important;
+	color: white !important; 
+	-webkit-border-radius: 4px !important; 
+	-moz-border-radius: 4px !important; 
+	border-radius: 4px !important; 
+	text-shadow: 1px 1px 1px #333 !important; 
+        line-height: 32px !important; 
+}
+legend
+{
+    margin-bottom: 0px !important;
+}
+.verticalAlignTop
+{
+    vertical-align: top !important;
+}
+.ui-effects-transfer 
+{
+    border: 1px dotted black;
+}
+

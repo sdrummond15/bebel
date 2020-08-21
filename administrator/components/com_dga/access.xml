@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<access component="com_dga">
+	<section name="component">
+		<action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+		<action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+		<action name="core.create" title="JACTION_CREATE" description="JACTION_CREATE_COMPONENT_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="JACTION_DELETE_COMPONENT_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="JACTION_EDIT_COMPONENT_DESC" />
+                <action name="core.edit.state" title="JACTION_EDITSTATE" description="JACTION_EDITSTATE_COMPONENT_DESC" />
+                <action name="dga.properties" title="Acesso a Imóveis" description="Acesso a tela de Imóveis" />
+                <action name="dga.states" title="Acesso a Estados" description="Acesso a tela de Estados" />
+                <action name="dga.typebusiness" title="Acesso a Tipo de Operações" description="Acesso a tela de Tipo de Operações" />
+                <action name="dga.typeproperty" title="Acesso a Tipo de Imóveis" description="Acesso a tela de Tipo de Imóveis" />
+                <action name="dga.additionalproperties" title="Acesso a Adicionais de Imóveis" description="Acesso a tela de Adicionais de Imóveis" />
+                <action name="dga.proprietary" title="Acesso a Proprietário de Imóveis" description="Acesso a tela de Proprietário de Imóveis" />
+                <action name="slideshows" title="Acesso ao SlideShow" description="Acesso ao SlideShow" />
+                <action name="document.save" title="COM_DGA_ACCESS_DOCUMENT_SAVE_LABEL" description="COM_DGA_ACCESS_DOCUMENT_SAVE_DESC" />
+                <action name="config.save" title="COM_DGA_ACCESS_CONFIG_LABEL" description="COM_DGA_ACCESS_CONFIG_DESC" />
+	</section>
+</access>

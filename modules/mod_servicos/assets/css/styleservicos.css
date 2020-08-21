@@ -1,0 +1,97 @@
+.modservicos{
+    width: 100%;
+    display: table;
+    padding: 70px 0;
+    margin: -70px 0;
+    background-color: #f40062;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 5;
+}
+.servicos{
+    width: 1170px;
+    margin: auto;
+}
+.servicos h1{
+    font-family: 'Futura Std';
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+    margin: 40px 0;
+}
+.servico{
+    display: block;
+    width: 210px;
+    float: left;
+    overflow: hidden;
+    margin-right: 30px;
+}
+.servico:last-child{
+    margin-right: 0;
+}
+.servico figure{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 100px;
+    overflow: hidden;
+}
+.servico figure img{
+    width: 100%;
+}
+.servico a figcaption{
+    width: 100%;
+    padding-top: 20px;
+    display: table;
+}
+
+.servico a,
+.servico a:hover{
+    text-decoration: none;
+}
+.servico a figcaption p{
+    font-family: 'Futura Std';
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+}
+.servico a:hover figcaption p{
+
+}
+
+@media screen and (max-width: 1170px){
+    .servicos{
+        width: 96%;
+    }
+    .servico{
+        width: 18.4%;
+        margin-right: 2%;
+    }
+    .servico figure{
+        width: 120px;
+        height: 120px;
+    }
+}
+@media screen and (max-width: 768px){
+    .servicos h1{
+        font-size: 24px;
+        line-height: 1.4;
+    }
+    .servico figure{
+        width: 80px;
+        height: 80px;
+    }
+    .servico a figcaption p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 600px){
+    .servico{
+        width: 80%;
+        margin: 0 auto 10px auto !important;
+        float: none;
+    }    
+    
+}

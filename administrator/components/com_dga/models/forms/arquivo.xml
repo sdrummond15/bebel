@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+        <field name="id_doc"
+               type="text"
+               default="0"
+               readonly="true"
+               class="readonly"
+               label="JGLOBAL_FIELD_ID_LABEL"
+               description="JGLOBAL_FIELD_ID_DESC" 
+              />
+      
+        <field
+              name="id_cat"
+              type="sql"
+              default=""
+              label="Categoria"
+              description=""
+              required="true"
+              key_field="id_cat"
+              value_field="nome_cat"
+              query="SELECT '' AS id_cat, '-- Selecione uma opção --' AS nome_cat UNION SELECT id_cat, nome_cat FROM #__dga_categorias_cat"
+              />
+      
+        <field name="filename_doc"
+               type="file"
+               label="Arquivo"
+               description="Escolha um arquivo do seu computador com no máximo 10MB de tamanho"
+               size="10240" 
+               accept="*"
+               required="false"
+               class="uploadBtn"
+        />
+        <field name="uploadFile"
+               type="text"
+               default=""
+               label="Arquivo"
+               description="Arquivo"
+               size="100"
+               required="false"
+               readonly="true"
+               class="readonly"
+               />
+        
+        <field name="title_doc"
+               type="text"
+               default=""
+               label="Título"
+               description=""
+               size="150"
+               required="true"
+               maxlength="150" />
+        
+        <field name="description_doc"
+               type="textarea"
+               default=""
+               label="Descrição"
+               description=""
+               required="true"
+               rows="5"
+               cols="10"/>
+        
+        <field name="create_user_doc"
+               type="text"
+               default=""
+               label="create_user_doc"
+               description=""
+               size="0"
+               required="false"
+               maxlength="0" />
+        
+        <field name="create_date_doc"
+               type="datepicker"
+               default=""
+               label="Selecione uma data"
+               description=""
+               dateFormat="dd/mm/yy"
+               mask="99/99/9999" />
+      <field name="data_inicio_publicacao_doc"
+               type="datepicker"
+               default=""
+               label="Início da publicação"
+               description="A parti desta data é que o arquivo vai estar disponível para download"
+               required="true"
+               dateFormat="dd/mm/yy"
+               mask="99/99/9999" />
+      <field name="data_fim_publicacao_doc"
+               type="datepicker"
+               default=""
+               label="Fim da publicação"
+               description="A partir desta data o arquivo não vai mais estar disponível para download"
+               required="true"
+               dateFormat="dd/mm/yy"
+               mask="99/99/9999" />
+        <field name="extension_doc"
+               type="text"
+               default=""
+               label="extension_doc"
+               description=""
+               size="5"
+               required="false"
+               maxlength="5" />
+        
+      <field name="downloads_count_doc"
+               type="text"
+               default="0"
+               readonly="true"
+               class="readonly"
+               label="Quantidade de Downloads"
+               description="Quantidade de Downloads" 
+              />      
+
+        <field name="published"
+               type="list"
+               default="1"
+               class="inputbox"
+               label="JSTATUS"
+               size="1"
+               description="Status" >
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field>
+
+    </fieldset>
+</form>
+

@@ -1,0 +1,57 @@
+.btnvoltar{
+    background: url('../../../../images/voltar.png') no-repeat left center;
+    padding: 15px 18px 15px 26px;
+    background-size: auto 100%;
+    font-family: 'Futura Std Medium';
+    color: #FFF;
+    text-decoration: none;
+}
+.btnvoltar:hover{
+    color: #aaa;
+    text-decoration: none;
+}
+.desc-arquivos h3{
+    font-family: 'Futura Std Book';
+    color: #c00;
+    font-size: 18px;
+    font-weight: normal;
+}
+.desc-arquivos h4{
+    font-family: 'Futura Std Book';
+    color: #c00;
+    font-size: 14px;
+    font-weight: normal;
+}
+.page-header h3{
+    padding: 10px 20px;
+    margin: 40px 0 20px;
+    border-bottom: 0;
+    background-color: #666;
+    color: #FFF;
+}
+.icon-download{
+    visibility: hidden;
+    width: auto !important;
+    display: none;
+}
+.download .btn{
+    height: 35px;
+    width: 149px;
+    background: url('../../../../images/download.png') transparent no-repeat;
+}
+.download .btn:hover{
+    background: url('../../../../images/download-hover.png') transparent no-repeat;
+}
+.documentos h1{
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: 'Futura Std Book';
+    font-weight: normal;
+}
+.documentos p,
+.documentos span{
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Futura Std Book';
+    font-weight: normal;
+}

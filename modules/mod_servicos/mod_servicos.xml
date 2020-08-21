@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+    type="module"
+    version="2.5"
+    client="site"
+    method="upgrade">
+    <name>mod_servicos</name>
+    <author>Wanderson Alves</author>
+    <creationDate>January 2015</creationDate>
+    <copyright>Copyright (C) - 2015 - Sdrummond Soluções em Tecnologia. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>wandersonmg18@gmail.com</authorEmail>
+    <authorUrl>www.sdrummond.com.br</authorUrl>
+    <version>1.0.1</version>
+    <description>MOD_SERVICOS_XML_DESCRIPTION</description>
+    <files>
+        <filename module="mod_servicos">mod_servicos.php</filename>
+        <folder>tmpl</folder>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>		
+        <filename>mod_servicos.xml</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="titulo" 
+                       type="text"
+                       size="10"
+                       label="Título"
+                />
+                <field name="catid" 
+                       type="category" 
+                       extension="com_content"
+                       label="Categoria"
+                />
+                <field
+                    name="qtdserv"
+                    type="text"
+                    size="10"
+                    default="1"
+                    label="Qtd Serviços"
+                />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

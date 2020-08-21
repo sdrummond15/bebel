@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fields name="filter">
+    <field
+        name="search"
+        type="text"
+        label="Pesquisa"
+        hint="Pesquisa por nome de usuário"
+        class="js-stools-search-string"
+        />
+    <field
+        name="id_doc"
+        type="sql"
+        default="0"
+        label="Arquivo"
+        description=""
+        onchange="this.form.submit();"
+        key_field="id_doc"
+        value_field="title_doc"
+        query="SELECT id_doc, title_doc FROM #__dga_documentos_doc ORDER BY title_doc"
+        />
+  </fields>
+</form>

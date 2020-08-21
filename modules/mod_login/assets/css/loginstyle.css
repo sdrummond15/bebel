@@ -1,0 +1,57 @@
+.area_cliente_login,
+.area_cliente_logout{
+    padding-top: 5px;
+    float: right;
+    cursor: pointer;
+}
+.form-login,
+.form-logout{
+    position: absolute;
+    z-index: 99;
+    padding: 10px;
+    background-color: #002a28;
+    width: 250px;
+    visibility: hidden;
+}
+#form-login-username label,
+#form-login-password label{
+    color: #FFF;
+    font-size: 16px;
+}
+#form-login-remember{
+    display: table;
+    margin: auto;
+}
+#form-login-remember label{
+    font-size: 14px;
+    color: #FFF;
+    margin-right: 5px;
+}
+#form-login-submit{
+    display: table;
+    margin: auto;
+}
+#form-login-submit .btn{
+    padding: 5px 15px;
+    font-size: 14px;
+}
+.form-login ul.unstyled{
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+.form-login ul.unstyled li{
+    text-align: center;
+}
+.form-login ul.unstyled li a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #FFF;
+}
+.form-login ul.unstyled li a:hover{
+    text-decoration: none;
+    color: #f2cc19;
+}
+.login-greeting{
+    color: #FFF;
+}

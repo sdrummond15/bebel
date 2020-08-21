@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<extension method="new" type="component" version="3">
+    <name>com_dga</name>
+    <author>Doria TI</author>
+    <creationDate>Agosto de 2015</creationDate>
+    <copyright>(C) 2015</copyright>
+    <license>Comercial</license>
+    <authorEmail>contato@doriati.com.br</authorEmail>
+    <authorUrl>www.doriati.com.br</authorUrl>
+    <version>1.0.4</version>
+    <description>COM_DGA_XML_DESCRIPTION</description>
+	
+	<!-- Runs on install/uninstall/update -->
+	<scriptfile>script.php</scriptfile>
+	
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+
+	<!-- Frontend -->
+	<files folder="site">
+		<folder>assets</folder>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>dga.php</filename>
+	</files>
+	<languages folder="site/language/pt-BR">
+		<language tag="pt-BR">pt-BR.com_dga.ini</language>
+	</languages>
+
+	<!-- Backend -->
+	<administration>
+		<menu img="components/com_dga/assets/images/menus/icon-16-property.png">COM_DGA</menu>
+		<submenu>
+			<menu img="components/com_dga/assets/images/menus/icon-16-property.png" view="arquivos">COM_DGA_CLIENTES</menu>
+		</submenu>
+		<languages folder="admin/language/pt-BR">
+			<language tag="pt-BR">pt-BR.com_dga.ini</language>
+			<language tag="pt-BR">pt-BR.com_dga.sys.ini</language>
+		</languages>
+		<files folder="admin">
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>helper.php</filename>
+			<filename>index.html</filename>
+			<filename>JHtmlPlus.php</filename>
+			<filename>dga.php</filename>
+			<filename>Utils.php</filename>
+		</files>
+	</administration>
+</extension>
+

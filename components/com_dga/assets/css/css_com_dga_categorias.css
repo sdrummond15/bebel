@@ -1,0 +1,38 @@
+﻿.categoria-imagem
+{
+    width: 48px;
+    height: 52px;
+    float: left;
+    position: relative;
+}
+.categoria-imagem img
+{
+    width: 48px;
+    height: 48px;
+    position: relative;
+}
+.categoria-texto
+{
+    float: left;
+    position: relative;
+    height: 46px;
+    width: 530px;
+    display: table;
+    margin-left: 15px;
+}
+.categoria-titulo
+{
+    font-weight: bold;
+    font-size: 15px;
+    width: 100%;
+    display: block;
+}
+.categoria-descricao
+{
+    width: 100%;
+}
+.categoria-hover:hover
+{
+    background-color: #f0ffff ;
+    cursor: pointer;
+}

@@ -1,0 +1,34 @@
+.nowrap
+{
+   white-space: nowrap !important; 
+}
+.center
+{
+   text-align: center !important; 
+}
+.right
+{
+   text-align: right !important; 
+}
+.colorAPagar td
+{
+    color: #D2322D;
+}
+.colorPago td
+{
+    color: #3276B1; 
+}
+thead th {
+  color: #049BE7;
+}
+#system-message
+{
+    margin-left: 20px;
+}
+.releasenotes-versao
+{
+    vertical-align: middle !important;
+}
+
+
+

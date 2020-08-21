@@ -1,0 +1,28 @@
+/* 
+    Document   : iconsToolbar
+    Created on : 21/02/2012, 22:42:44
+    Author     : Luciano
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.icon-32-checkagio 		{ background-image: url(../images/toolbar/icon-32-checkagio.png); }
+.icon-32-uncheckagio            { background-image: url(../images/toolbar/icon-32-unchekagio.png);}
+
+.icon-48-city                   { background-image: url(../images/header/icon-48-city.png); }
+.icon-48-house                  { background-image: url(../images/header/icon-48-house.png); }
+.icon-48-state                  { background-image: url(../images/header/icon-48-state.png); }
+.icon-48-property               { background-image: url(../images/header/icon-48-property.png); }
+.icon-48-type_of_business       { background-image: url(../images/header/icon-48-type_of_business.png); }
+.icon-48-type_of_property       { background-image: url(../images/header/icon-48-type_of_property.png); }
+.icon-48-additional_properties  { background-image: url(../images/header/icon-48-additional_properties.png); }
+.icon-48-proprietary            { background-image: url(../images/header/icon-48-proprietary.png); }
+.icon-48-configuration          { background-image: url(../images/header/icon-48-configuration.png); }
+.icon-48-calendar               { background-image: url(../images/header/icon-48-calendar.png); }
+.icon-48-document               { background-image: url(../images/header/icon-48-document.png); }
+.icon-48-slideshows             { background-image: url(../images/header/icon-48-slideshows.png); }

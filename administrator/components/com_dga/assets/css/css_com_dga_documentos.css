@@ -1,0 +1,35 @@
+.fileUpload {
+	position: relative;
+	overflow: hidden;
+	margin: 10px;
+}
+.fileUpload input.upload {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+#jform_filename_doc
+{
+    display: none;
+}
+.checkbox-label-usuarios
+{
+    margin-left: 5px;
+    font-size: 15px;
+}
+.checkbox-label-grupos
+{
+    margin-left: 1px;
+    font-size: 15px;
+}
+.documento-lista-info
+{
+    margin-bottom: 10px;
+    display: block;
+}

@@ -1,0 +1,172 @@
+.boleto-form h1{
+
+    line-height: 1.2;
+
+    color: #002a28;
+
+    font-family: 'Futura Std Book';
+
+    font-size: 30px;
+
+    margin: 0 0 30px 0;
+
+    text-align: center;
+
+}
+
+#boleto-form{
+
+    display: table;
+
+    margin: auto;
+
+    width: 100%;
+
+}
+
+#boleto-form input{
+
+    width: 96%;
+
+    padding: 5px 2%;
+
+    margin-bottom: 14px;
+
+    border: 0;
+
+    background-color: #f1f1f1;
+
+    color: #444;
+
+    font-family: 'Futura Std Book';
+
+    font-size: 16px;
+
+    border-radius: 0;
+
+    float: left;
+
+}
+
+#boleto-form input#cpf,
+
+#boleto-form input#telefone{
+
+    width: 28%;
+
+    padding: 8px 2%;
+
+    margin-right: 2%;
+
+}
+
+#boleto-form input#email{
+
+    width: 28%;
+
+    padding: 8px 2%;
+
+}
+
+#boleto-form input#edificio{
+
+    width: 76%;
+
+    padding: 8px 2%;
+
+    margin-right: 2%;
+
+}
+
+#boleto-form input#unidade{
+
+    width: 14%;
+
+    padding: 8px 2%;
+
+}
+
+#boleto-form input#competencia{
+
+    width: 50%;
+
+    padding: 8px 2%;
+
+}
+
+
+.dados{
+
+    display: table;
+
+    width: 100%;
+
+}
+
+
+
+#boleto-form h4,
+
+#boleto-form label{
+
+    font-family: 'Futura Std Book';
+
+    color: #002a28;
+
+    font-size: 16px;
+
+    line-height: 1.4em;
+
+    margin: 0 0 10px 0;
+
+    font-weight: normal;
+
+}
+
+
+
+#boleto-form input.submitform{
+
+    font-family: 'Futura Std Book', sans-serif;
+
+    width: auto;
+
+    padding: 10px 20px;
+
+    background-color: #00675a;
+
+    color: #FFF;
+
+    cursor: pointer;
+
+    border: 0;
+
+    font-size: 18px;
+
+    margin: auto;
+
+    display: table;
+
+    float: none;
+
+}
+
+#boleto-form input.submitform:hover{
+
+    background-color: #058070;
+
+}
+
+@media screen and (max-width: 600px){
+
+    #boleto-form input{
+
+        width: 96% !important;
+
+        padding: 5px 2% !important;
+
+        margin-right: auto !important;
+
+    }
+
+}
