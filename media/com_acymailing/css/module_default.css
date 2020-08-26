@@ -59,7 +59,7 @@ img.captchaimagemodule{
 .acymailing_module_form td input {
     border: 0;
     padding: 5px 2%;
-    font-family: 'Futura Std Book';
+    font-family: 'Encode Sans Semi Expanded';
     font-size: 16px;
     color: #000;
 }
@@ -84,7 +84,7 @@ div.acymailing_module_success {
 }
 
 .acysubbuttons input {
-    font-family: 'Futura Std Book' !important;
+    font-family: 'Encode Sans Semi Expanded' !important;
     font-size: 16px !important;
     color: #FFF !important;
     text-transform: uppercase !important;

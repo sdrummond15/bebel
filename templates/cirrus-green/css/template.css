@@ -1,254 +1,122 @@
 @font-face {
-    font-family: 'Futura Std BoldOblique';
-    src: url('../css/fontes/FuturaStd-BoldOblique.eot');
-    src: url('../css/fontes/FuturaStd-BoldOblique.eot?#iefix') format('embedded-opentype'),
-        url('../css/fontes/FuturaStd-BoldOblique.woff2') format('woff2'),
-        url('../css/fontes/FuturaStd-BoldOblique.woff') format('woff'),
-        url('../css/fontes/FuturaStd-BoldOblique.ttf') format('truetype'),
-        url('../css/fontes/FuturaStd-BoldOblique.svg#FuturaStd-BoldOblique') format('svg');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Futura Std MediumOblique';
-    src: url('../css/fontes/FuturaStd-MediumOblique.eot');
-    src: url('../css/fontes/FuturaStd-MediumOblique.eot?#iefix') format('embedded-opentype'),
-        url('../css/fontes/FuturaStd-MediumOblique.woff2') format('woff2'),
-        url('../css/fontes/FuturaStd-MediumOblique.woff') format('woff'),
-        url('../css/fontes/FuturaStd-MediumOblique.ttf') format('truetype'),
-        url('../css/fontes/FuturaStd-MediumOblique.svg#FuturaStd-MediumOblique') format('svg');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Futura Std Condensed BoldObl';
-    src: url('../css/fontes/FuturaStd-CondensedBoldObl.eot');
-    src: url('../css/fontes/FuturaStd-CondensedBoldObl.eot?#iefix') format('embedded-opentype'),
-        url('../css/fontes/FuturaStd-CondensedBoldObl.woff2') format('woff2'),
-        url('../css/fontes/FuturaStd-CondensedBoldObl.woff') format('woff'),
-        url('../css/fontes/FuturaStd-CondensedBoldObl.ttf') format('truetype'),
-        url('../css/fontes/FuturaStd-CondensedBoldObl.svg#FuturaStd-CondensedBoldObl') format('svg');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Futura Std Condensed Oblique';
-    src: url('../css/fontes/FuturaStd-CondensedOblique.eot');
-    src: url('../css/fontes/FuturaStd-CondensedOblique.eot?#iefix') format('embedded-opentype'),
-        url('../css/fontes/FuturaStd-CondensedOblique.woff2') format('woff2'),
-        url('../css/fontes/FuturaStd-CondensedOblique.woff') format('woff'),
-        url('../css/fontes/FuturaStd-CondensedOblique.ttf') format('truetype'),
-        url('../css/fontes/FuturaStd-CondensedOblique.svg#FuturaStd-CondensedOblique') format('svg');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Futura Std ExtraBold';
-    src: url('../css/fontes/FuturaStd-ExtraBold.eot');
-    src: url('../css/fontes/FuturaStd-ExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('../css/fontes/FuturaStd-ExtraBold.woff2') format('woff2'),
-        url('../css/fontes/FuturaStd-ExtraBold.woff') format('woff'),
-        url('../css/fontes/FuturaStd-ExtraBold.ttf') format('truetype'),
-        url('../css/fontes/FuturaStd-ExtraBold.svg#FuturaStd-ExtraBold') format('svg');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Futura Std Condensed Light';
-    src: url('../css/fontes/FuturaStd-CondensedLight.eot');
-    src: url('../css/fontes/FuturaStd-CondensedLight.eot?#iefix') format('embedded-opentype'),
-        url('../css/fontes/FuturaStd-CondensedLight.woff2') format('woff2'),
-        url('../css/fontes/FuturaStd-CondensedLight.woff') format('woff'),
-        url('../css/fontes/FuturaStd-CondensedLight.ttf') format('truetype'),
-        url('../css/fontes/FuturaStd-CondensedLight.svg#FuturaStd-CondensedLight') format('svg');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Futura Std LightOblique';
-    src: url('../css/fontes/FuturaStd-LightOblique.eot');
-    src: url('../css/fontes/FuturaStd-LightOblique.eot?#iefix') format('embedded-opentype'),
-        url('../css/fontes/FuturaStd-LightOblique.woff2') format('woff2'),
-        url('../css/fontes/FuturaStd-LightOblique.woff') format('woff'),
-        url('../css/fontes/FuturaStd-LightOblique.ttf') format('truetype'),
-        url('../css/fontes/FuturaStd-LightOblique.svg#FuturaStd-LightOblique') format('svg');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Futura Std Condensed Bold';
-    src: url('../css/fontes/FuturaStd-CondensedBold.eot');
-    src: url('../css/fontes/FuturaStd-CondensedBold.eot?#iefix') format('embedded-opentype'),
-        url('../css/fontes/FuturaStd-CondensedBold.woff2') format('woff2'),
-        url('../css/fontes/FuturaStd-CondensedBold.woff') format('woff'),
-        url('../css/fontes/FuturaStd-CondensedBold.ttf') format('truetype'),
-        url('../css/fontes/FuturaStd-CondensedBold.svg#FuturaStd-CondensedBold') format('svg');
+    font-family: 'Encode Sans Semi Expanded';
+    src: url('../css/fonts/EncodeSansSemiExpanded-Bold.eot');
+    src: url('../css/fonts/EncodeSansSemiExpanded-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../css/fonts/EncodeSansSemiExpanded-Bold.woff2') format('woff2'),
+        url('../css/fonts/EncodeSansSemiExpanded-Bold.woff') format('woff'),
+        url('../css/fonts/EncodeSansSemiExpanded-Bold.ttf') format('truetype'),
+        url('../css/fonts/EncodeSansSemiExpanded-Bold.svg#EncodeSansSemiExpanded-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Futura Std Book';
-    src: url('../css/fontes/FuturaStd-Book.eot');
-    src: url('../css/fontes/FuturaStd-Book.eot?#iefix') format('embedded-opentype'),
-        url('../css/fontes/FuturaStd-Book.woff2') format('woff2'),
-        url('../css/fontes/FuturaStd-Book.woff') format('woff'),
-        url('../css/fontes/FuturaStd-Book.ttf') format('truetype'),
-        url('../css/fontes/FuturaStd-Book.svg#FuturaStd-Book') format('svg');
+    font-family: 'Encode Sans Semi Expanded';
+    src: url('../css/fonts/EncodeSansSemiExpanded-Thin.eot');
+    src: url('../css/fonts/EncodeSansSemiExpanded-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../css/fonts/EncodeSansSemiExpanded-Thin.woff2') format('woff2'),
+        url('../css/fonts/EncodeSansSemiExpanded-Thin.woff') format('woff'),
+        url('../css/fonts/EncodeSansSemiExpanded-Thin.ttf') format('truetype'),
+        url('../css/fonts/EncodeSansSemiExpanded-Thin.svg#EncodeSansSemiExpanded-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Encode Sans Semi Expanded';
+    src: url('../css/fonts/EncodeSansSemiExpanded-Regular.eot');
+    src: url('../css/fonts/EncodeSansSemiExpanded-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../css/fonts/EncodeSansSemiExpanded-Regular.woff2') format('woff2'),
+        url('../css/fonts/EncodeSansSemiExpanded-Regular.woff') format('woff'),
+        url('../css/fonts/EncodeSansSemiExpanded-Regular.ttf') format('truetype'),
+        url('../css/fonts/EncodeSansSemiExpanded-Regular.svg#EncodeSansSemiExpanded-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Futura Std Bold';
-    src: url('../css/fontes/FuturaStd-Bold.eot');
-    src: url('../css/fontes/FuturaStd-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../css/fontes/FuturaStd-Bold.woff2') format('woff2'),
-        url('../css/fontes/FuturaStd-Bold.woff') format('woff'),
-        url('../css/fontes/FuturaStd-Bold.ttf') format('truetype'),
-        url('../css/fontes/FuturaStd-Bold.svg#FuturaStd-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Futura Std Condensed ExtBdObl';
-    src: url('../css/fontes/FuturaStd-CondExtraBoldObl.eot');
-    src: url('../css/fontes/FuturaStd-CondExtraBoldObl.eot?#iefix') format('embedded-opentype'),
-        url('../css/fontes/FuturaStd-CondExtraBoldObl.woff2') format('woff2'),
-        url('../css/fontes/FuturaStd-CondExtraBoldObl.woff') format('woff'),
-        url('../css/fontes/FuturaStd-CondExtraBoldObl.ttf') format('truetype'),
-        url('../css/fontes/FuturaStd-CondExtraBoldObl.svg#FuturaStd-CondExtraBoldObl') format('svg');
-    font-weight: 800;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Futura Std ExtraBoldOblique';
-    src: url('../css/fontes/FuturaStd-ExtraBoldOblique.eot');
-    src: url('../css/fontes/FuturaStd-ExtraBoldOblique.eot?#iefix') format('embedded-opentype'),
-        url('../css/fontes/FuturaStd-ExtraBoldOblique.woff2') format('woff2'),
-        url('../css/fontes/FuturaStd-ExtraBoldOblique.woff') format('woff'),
-        url('../css/fontes/FuturaStd-ExtraBoldOblique.ttf') format('truetype'),
-        url('../css/fontes/FuturaStd-ExtraBoldOblique.svg#FuturaStd-ExtraBoldOblique') format('svg');
-    font-weight: 800;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Futura Std Heavy';
-    src: url('../css/fontes/FuturaStd-Heavy.eot');
-    src: url('../css/fontes/FuturaStd-Heavy.eot?#iefix') format('embedded-opentype'),
-        url('../css/fontes/FuturaStd-Heavy.woff2') format('woff2'),
-        url('../css/fontes/FuturaStd-Heavy.woff') format('woff'),
-        url('../css/fontes/FuturaStd-Heavy.ttf') format('truetype'),
-        url('../css/fontes/FuturaStd-Heavy.svg#FuturaStd-Heavy') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Futura Std Medium';
-    src: url('../css/fontes/FuturaStd-Medium.eot');
-    src: url('../css/fontes/FuturaStd-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../css/fontes/FuturaStd-Medium.woff2') format('woff2'),
-        url('../css/fontes/FuturaStd-Medium.woff') format('woff'),
-        url('../css/fontes/FuturaStd-Medium.ttf') format('truetype'),
-        url('../css/fontes/FuturaStd-Medium.svg#FuturaStd-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Futura Std Condensed ExtBd';
-    src: url('../css/fontes/FuturaStd-CondensedExtraBd.eot');
-    src: url('../css/fontes/FuturaStd-CondensedExtraBd.eot?#iefix') format('embedded-opentype'),
-        url('../css/fontes/FuturaStd-CondensedExtraBd.woff2') format('woff2'),
-        url('../css/fontes/FuturaStd-CondensedExtraBd.woff') format('woff'),
-        url('../css/fontes/FuturaStd-CondensedExtraBd.ttf') format('truetype'),
-        url('../css/fontes/FuturaStd-CondensedExtraBd.svg#FuturaStd-CondensedExtraBd') format('svg');
+    font-family: 'Encode Sans Semi Expanded';
+    src: url('../css/fonts/EncodeSansSemiExpanded-Black.eot');
+    src: url('../css/fonts/EncodeSansSemiExpanded-Black.eot?#iefix') format('embedded-opentype'),
+        url('../css/fonts/EncodeSansSemiExpanded-Black.woff2') format('woff2'),
+        url('../css/fonts/EncodeSansSemiExpanded-Black.woff') format('woff'),
+        url('../css/fonts/EncodeSansSemiExpanded-Black.ttf') format('truetype'),
+        url('../css/fonts/EncodeSansSemiExpanded-Black.svg#EncodeSansSemiExpanded-Black') format('svg');
     font-weight: 900;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Futura Std';
-    src: url('../css/fontes/FuturaStd-Light.eot');
-    src: url('../css/fontes/FuturaStd-Light.eot?#iefix') format('embedded-opentype'),
-        url('../css/fontes/FuturaStd-Light.woff2') format('woff2'),
-        url('../css/fontes/FuturaStd-Light.woff') format('woff'),
-        url('../css/fontes/FuturaStd-Light.ttf') format('truetype'),
-        url('../css/fontes/FuturaStd-Light.svg#FuturaStd-Light') format('svg');
+    font-family: 'Encode Sans Semi Expanded SmBd';
+    src: url('../css/fonts/EncodeSansSemiExpanded-SemiBold.eot');
+    src: url('../css/fonts/EncodeSansSemiExpanded-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../css/fonts/EncodeSansSemiExpanded-SemiBold.woff2') format('woff2'),
+        url('../css/fonts/EncodeSansSemiExpanded-SemiBold.woff') format('woff'),
+        url('../css/fonts/EncodeSansSemiExpanded-SemiBold.ttf') format('truetype'),
+        url('../css/fonts/EncodeSansSemiExpanded-SemiBold.svg#EncodeSansSemiExpanded-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Encode Sans Semi Expanded ExLight';
+    src: url('../css/fonts/EncodeSansSemiExpanded-ExtraLight.eot');
+    src: url('../css/fonts/EncodeSansSemiExpanded-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../css/fonts/EncodeSansSemiExpanded-ExtraLight.woff2') format('woff2'),
+        url('../css/fonts/EncodeSansSemiExpanded-ExtraLight.woff') format('woff'),
+        url('../css/fonts/EncodeSansSemiExpanded-ExtraLight.ttf') format('truetype'),
+        url('../css/fonts/EncodeSansSemiExpanded-ExtraLight.svg#EncodeSansSemiExpanded-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Encode Sans Semi Expanded';
+    src: url('../css/fonts/EncodeSansSemiExpanded-Light.eot');
+    src: url('../css/fonts/EncodeSansSemiExpanded-Light.eot?#iefix') format('embedded-opentype'),
+        url('../css/fonts/EncodeSansSemiExpanded-Light.woff2') format('woff2'),
+        url('../css/fonts/EncodeSansSemiExpanded-Light.woff') format('woff'),
+        url('../css/fonts/EncodeSansSemiExpanded-Light.ttf') format('truetype'),
+        url('../css/fonts/EncodeSansSemiExpanded-Light.svg#EncodeSansSemiExpanded-Light') format('svg');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Futura Std Book Oblique';
-    src: url('../css/fontes/FuturaStd-BookOblique.eot');
-    src: url('../css/fontes/FuturaStd-BookOblique.eot?#iefix') format('embedded-opentype'),
-        url('../css/fontes/FuturaStd-BookOblique.woff2') format('woff2'),
-        url('../css/fontes/FuturaStd-BookOblique.woff') format('woff'),
-        url('../css/fontes/FuturaStd-BookOblique.ttf') format('truetype'),
-        url('../css/fontes/FuturaStd-BookOblique.svg#FuturaStd-BookOblique') format('svg');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Futura Std Condensed LightObl';
-    src: url('../css/fontes/FuturaStd-CondensedLightObl.eot');
-    src: url('../css/fontes/FuturaStd-CondensedLightObl.eot?#iefix') format('embedded-opentype'),
-        url('../css/fontes/FuturaStd-CondensedLightObl.woff2') format('woff2'),
-        url('../css/fontes/FuturaStd-CondensedLightObl.woff') format('woff'),
-        url('../css/fontes/FuturaStd-CondensedLightObl.ttf') format('truetype'),
-        url('../css/fontes/FuturaStd-CondensedLightObl.svg#FuturaStd-CondensedLightObl') format('svg');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Futura Std Book_1';
-    src: url('../css/fontes/FuturaStd-Book_1.eot');
-    src: url('../css/fontes/FuturaStd-Book_1.eot?#iefix') format('embedded-opentype'),
-        url('../css/fontes/FuturaStd-Book_1.woff2') format('woff2'),
-        url('../css/fontes/FuturaStd-Book_1.woff') format('woff'),
-        url('../css/fontes/FuturaStd-Book_1.ttf') format('truetype'),
-        url('../css/fontes/FuturaStd-Book_1.svg#FuturaStd-Book') format('svg');
-    font-weight: normal;
+    font-family: 'Encode Sans Semi Expanded ExBd';
+    src: url('../css/fonts/EncodeSansSemiExpanded-ExtraBold.eot');
+    src: url('../css/fonts/EncodeSansSemiExpanded-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../css/fonts/EncodeSansSemiExpanded-ExtraBold.woff2') format('woff2'),
+        url('../css/fonts/EncodeSansSemiExpanded-ExtraBold.woff') format('woff'),
+        url('../css/fonts/EncodeSansSemiExpanded-ExtraBold.ttf') format('truetype'),
+        url('../css/fonts/EncodeSansSemiExpanded-ExtraBold.svg#EncodeSansSemiExpanded-ExtraBold') format('svg');
+    font-weight: 800;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Futura Std Condensed';
-    src: url('../css/fontes/FuturaStd-Condensed.eot');
-    src: url('../css/fontes/FuturaStd-Condensed.eot?#iefix') format('embedded-opentype'),
-        url('../css/fontes/FuturaStd-Condensed.woff2') format('woff2'),
-        url('../css/fontes/FuturaStd-Condensed.woff') format('woff'),
-        url('../css/fontes/FuturaStd-Condensed.ttf') format('truetype'),
-        url('../css/fontes/FuturaStd-Condensed.svg#FuturaStd-Condensed') format('svg');
+    font-family: 'Encode Sans Semi Expanded';
+    src: url('../css/fonts/EncodeSansSemiExpanded-Medium.eot');
+    src: url('../css/fonts/EncodeSansSemiExpanded-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../css/fonts/EncodeSansSemiExpanded-Medium.woff2') format('woff2'),
+        url('../css/fonts/EncodeSansSemiExpanded-Medium.woff') format('woff'),
+        url('../css/fonts/EncodeSansSemiExpanded-Medium.ttf') format('truetype'),
+        url('../css/fonts/EncodeSansSemiExpanded-Medium.svg#EncodeSansSemiExpanded-Medium') format('svg');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
-@font-face {
-    font-family: 'Futura Std HeavyOblique';
-    src: url('../css/fontes/FuturaStd-HeavyOblique.eot');
-    src: url('../css/fontes/FuturaStd-HeavyOblique.eot?#iefix') format('embedded-opentype'),
-        url('../css/fontes/FuturaStd-HeavyOblique.woff2') format('woff2'),
-        url('../css/fontes/FuturaStd-HeavyOblique.woff') format('woff'),
-        url('../css/fontes/FuturaStd-HeavyOblique.ttf') format('truetype'),
-        url('../css/fontes/FuturaStd-HeavyOblique.svg#FuturaStd-HeavyOblique') format('svg');
-    font-weight: bold;
-    font-style: italic;
-}
+
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -313,7 +181,7 @@ html, body {
 
 body {
     text-align: left;
-    font-family: 'Futura Std Book', Verdana, Arial;
+    font-family: 'Encode Sans Semi Expanded', Verdana, Arial;
     font-size: 18px;
     line-height: 1.4em;
     color: #000;
@@ -323,7 +191,6 @@ a {
     color: #FFF;
     line-height: 1.6;
     text-decoration: none;
-    padding: 0 !important;
 }
 
 img {
@@ -345,11 +212,12 @@ p {
 }
 
 h1 {
-    font-family: 'Futura Std Medium', Verdana, Arial;
+    font-family: 'Encode Sans Semi Expanded', Verdana, Arial;
     color: #000;
     font-size: 30px;
     line-height:1.2;
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 h1 a {
@@ -364,7 +232,7 @@ h1 a:hover {
 
 
 h2 {
-    font-family: 'Futura Std Medium', Verdana, Arial;
+    font-family: 'Encode Sans Semi Expanded', Verdana, Arial;
     color: #000;
     font-size: 24px;
     line-height:1.2;
@@ -378,7 +246,7 @@ h2 a:hover{
 }
 
 h3 {
-    font-family: 'Futura Std Medium', Verdana, Arial;
+    font-family: 'Encode Sans Semi Expanded', Verdana, Arial;
     color: #444;
     font-size: 20px;
     line-height:1.2;
@@ -459,6 +327,10 @@ hr {
     margin: 0;
 }
 
+#home {
+    display: table;
+}
+
 #wrapper {
     display: block;
     padding: 0;
@@ -481,7 +353,7 @@ hr {
 #contact-form button.validate,
 #mailto-window button,
 .btn {
-    font-family: 'Futura Std Book', sans-serif; 
+    font-family: 'Encode Sans Semi Expanded', sans-serif; 
     width: auto;
     padding: 10px 20px;
     background-color: #00675a;
@@ -506,13 +378,9 @@ hr {
     background-color: #058070;
 }
 
-
 .readmore a {
     font-weight: 700;
 }
-
-
-
 
 /** Header **/
 
@@ -525,16 +393,15 @@ hr {
     z-index: 9999;
 }
 
-
 #header {
     width: 1170px;
     margin: auto;
 }
 
-
-
 #logo {
     float: left;
+    margin-top: -36px;
+    background-color: #FFF;
 }
 
 #logo a {
@@ -548,7 +415,7 @@ hr {
 }
 
 #logo a img{
-    margin: 0 10px 10px 10px;
+    margin: 10px 20px;
 }
 
 #logo div.sitedescription {
@@ -564,12 +431,10 @@ hr {
     display: table;
 }
 
-
-
 #search_wrap{
     width: 100%;
     display: table;
-    background-color: #f40062;
+    background-color: #d4005f;
 }
 
 #search {
@@ -601,21 +466,22 @@ hr {
     color: #FFF;
     font-size: 14px;
     line-height: 1;
-    font-family: 'Futura Std Book';
+    font-family: 'Encode Sans Semi Expanded';
     text-decoration: none;
     vertical-align: middle;
 }
 .customcabecalho address a:hover{
-    font-family: 'Futura Std Book';
+    font-family: 'Encode Sans Semi Expanded';
 }
 .customcabecalho a:hover{
-    font-family: 'Futura Std Book Oblique';
+    font-family: 'Encode Sans Semi Expanded Oblique';
 }
 
 /** Topmenu (added multi-level support v1.1) **/
-.menutop{
+.menutop {
     float: right;
 }
+
 #topmenu_wrap {
     float: right;
     visibility: hidden;
@@ -627,49 +493,57 @@ hr {
 
 #topmenu ul { 
     padding: 0;
-    margin: 30px 0 0 0;
+    margin: 0;
     list-style: none;
 }
 
 #topmenu a {
-    font-family: 'Futura Std Book';
-    font-size: 18px;
+    font-family: 'Encode Sans Semi Expanded';
+    font-size: 14px;
     display: table;
     color: #000; 
     text-decoration:none;
-    padding: 0 !important;
+    padding: 0 10px !important;
+    width: calc(100% - 20px);
+    height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+#topmenu a span{
+    display: table-cell;
+    vertical-align: middle;
 }
 
 #topmenu a:hover {
-    color: #000;
+    background-color: #d4005f;
+    color: #FFF;
 }
 
+#topmenu li.active {
+    background-color: #d4005f;
+}
 #topmenu li.active a,
 #topmenu li.active a:hover {
-    color: #000;
+    color: #FFF;
     text-decoration: none;
     border: 0;
+    background-color: #d4005f;
+    font-weight: 600;
 }
 
 #topmenu li { 
     float: left;
-    margin: 0 20px;
+    margin: 0 1px;
+    padding: 0;
     line-height: 1.4;
+    height: 80px;
+    max-width: 110px;
 }
+
 #topmenu li img{
     display: table;
     margin: auto;
 }
-#topmenu li.active,
-#topmenu li.active:hover,
-#topmenu li:hover{
-    -webkit-filter: contrast(300%);
-    -moz-filter: contrast(300%);
-    -ms-filter: contrast(300%);
-    -o-filter: contrast(300%);
-    filter: contrast(300%);
-}
-
 
 /** Second-level lists **/
 
@@ -744,32 +618,45 @@ hr {
     margin: auto;
 }
 
+/** Angulos **/
+.right-angle {
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    width: 100%;
+    display: table;
+    height: 70px;
+}
 
-
+.left-angle {
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+    width: 100%;
+    display: table;
+    height: 70px;
+}
 
 /** Breadcrumbs **/
 
 #breadcrumbs {
     width: 100%;
     display: table;
+    margin: -70px 0;
+    position: relative;
+    z-index: 5;
 }
 
+#breadcrumbs .right-angle,
+#breadcrumbs .left-angle {
+    background-color: #d4005f;
+}
 
 .custombebel_home{
     width: 100%;
     display: table;
-    padding: 70px 0;
-    margin: -70px 0;
-    background: url('../../../images/backbebel.png') no-repeat;
-    background-size: 100% 100%;
-    position: relative;
-    z-index: 5;
-    position: relative;
-    z-index: 5;
+    background-color: #d4005f;
 }
 
-.bebel_home{
+#bebel-soares{
     width: 1170px;
+    padding: 40px 0;
     margin: auto;
     color: #fff; 
 }
@@ -797,7 +684,7 @@ hr {
 
 #leftmenu a,
 #rightmenu a {
-    font-family: 'Futura Std';
+    font-family: 'Encode Sans Semi Expanded';
     font-size: 20px;
     color: #FFF;
     text-decoration: none;
@@ -911,41 +798,35 @@ hr {
 }
 
 #content-top {
-    width: 110%;
-    left: -5%;
+    width: 100%;
     position: relative;
-    transform: rotate(-2deg);
-    -ms-transform: rotate(-2deg);
-    -webkit-transform: rotate(-2deg);
     display: table;
-    overflow: hidden;
     z-index: 0;
-    margin-bottom: -60px;
 }
-.custom-empresa{
-    width: 91%;
-    margin: 0 auto 0 auto;
-    padding: 105px 0 105px 0;
-    transform: rotate(2deg);
-    -ms-transform: rotate(2deg);
-    -webkit-transform: rotate(2deg);
+
+.category-module-livros {
+    padding: 100px 0 120px 0;
+    width: 100%;
+    display: table;
     background: url('../../../images/bebel_soares.jpg') no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
+
 .livro{
     width: 900px;
     margin: auto;
     display: table;
 }
 .livro p{
-    font-family: 'Futura Std';
+    font-family: 'Encode Sans Semi Expanded';
     font-size: 20px;
     color: #000;
     margin: 10px;
 
 }
 .livro h1{
-    font-family: 'Futura Std';
+    font-family: 'Encode Sans Semi Expanded';
     margin-left: 20px;
     margin-top: 30px;
 }
@@ -959,7 +840,7 @@ hr {
     margin-top: 20px;
 }
 .conheca a{
-    font-family: 'Futura Std Book';
+    font-family: 'Encode Sans Semi Expanded';
     font-size: 18px;
     text-align: center;
     color: #FFF;
@@ -1000,7 +881,7 @@ hr {
     margin: auto;
 }
 .custom-padecendo p{
-    font-family: 'Futura Std';
+    font-family: 'Encode Sans Semi Expanded';
     font-size: 20px;
     color: #000;
     margin: 20px;
@@ -1013,7 +894,7 @@ hr {
     margin: 0 auto 30px auto;
 }
 .custom-padecendo .contrate a{
-    font-family: 'Futura Std Book';
+    font-family: 'Encode Sans Semi Expanded';
     font-size: 18px;
     text-align: center;
     color: #FFF;
@@ -1034,7 +915,7 @@ hr {
     margin: auto;
 }
 .custom-pecadoras p{
-    font-family: 'Futura Std';
+    font-family: 'Encode Sans Semi Expanded';
     font-size: 20px;
     color: #000;
     margin: 20px;
@@ -1047,7 +928,7 @@ hr {
     margin: 0 auto 30px auto;
 }
 .custom-pecadoras .contrate a{
-    font-family: 'Futura Std Book';
+    font-family: 'Encode Sans Semi Expanded';
     font-size: 18px;
     text-align: center;
     color: #FFF;
@@ -1096,7 +977,7 @@ dl.article-info {
 
 .article-info dd, .article-info dd {
     margin-left: 0;
-    font-family: 'Futura Std Book Oblique';
+    font-family: 'Encode Sans Semi Expanded Oblique';
     font-size: 14px;
 }
 
@@ -1402,7 +1283,7 @@ li.next {
     margin: 0;
     padding: 0;
     text-align: center;
-    font-family: 'Futura Std';
+    font-family: 'Encode Sans Semi Expanded';
 }
 
 .pagination ul li span,
@@ -2021,7 +1902,7 @@ a.feed-link {
     padding: 15px 0;
     text-align: center;
     color: #FFF;
-    font-family: 'Futura Std Book';
+    font-family: 'Encode Sans Semi Expanded';
     font-size: 14px;
 }
 .sd{
@@ -2296,7 +2177,7 @@ body.contentpane a:hover {
 .custom-banner h1{
     margin: 70px 20px 70px 0;
     text-align: right;
-    font-family: 'Futura Std';
+    font-family: 'Encode Sans Semi Expanded';
     font-size: 40px;
     color: #000;
 }
@@ -2338,7 +2219,7 @@ ul.category-module-servicos li a img{
     width: 70%;
 }
 ul.category-module-servicos li a p{
-    font-family: 'Futura Std Book';
+    font-family: 'Encode Sans Semi Expanded';
     font-size: 22px;
     color: #87c24e;
     line-height: 1.1;
@@ -2350,7 +2231,7 @@ ul.category-module-servicos li a p{
     background-color: #e0b901;
 }
 .blog-featured-destaque-home h1{
-    font-family: 'Futura Std';
+    font-family: 'Encode Sans Semi Expanded';
     font-size: 30px;
     color: #000;
     text-transform: uppercase;
@@ -2405,7 +2286,7 @@ ul.category-module-servicos li a p{
     list-style: none;
 }
 .menu-menu-map li a{
-    font-family: 'Futura Std Book';
+    font-family: 'Encode Sans Semi Expanded';
     font-size: 24px;
     color: #FFF;
     text-decoration: none;
@@ -2415,7 +2296,7 @@ ul.category-module-servicos li a p{
 }
 
 .moduletable-contato h3{
-    font-family: 'Futura Std';
+    font-family: 'Encode Sans Semi Expanded';
     font-size: 24px;
     color: #FFF;
     margin: 30px 0;
@@ -2423,14 +2304,14 @@ ul.category-module-servicos li a p{
 }
 
 .custom-contato p{
-    font-family: 'Futura Std';
+    font-family: 'Encode Sans Semi Expanded';
     font-size: 20px;
     color: #FFF;
     line-height: 1.2;
 }
 
 .custom-contato address h4{
-    font-family: 'Futura Std Medium';
+    font-family: 'Encode Sans Semi Expanded';
     font-size: 16px;
     margin: 0 0 5px 0;
     color: #FFF;
@@ -2442,7 +2323,7 @@ ul.category-module-servicos li a p{
 }
 .custom-redes-sociais p{
     text-align: center;
-    font-family: 'Futura Std Book';
+    font-family: 'Encode Sans Semi Expanded';
     font-size: 18px;
     color: #FFF;
 }
@@ -2452,14 +2333,14 @@ ul.category-module-servicos li a p{
 }
 
 .moduletable-localizacao h3{
-    font-family: 'Futura Std';
+    font-family: 'Encode Sans Semi Expanded';
     font-size: 24px;
     color: #FFF;
     margin: 30px 0;
     text-transform: uppercase;
 }
 .custom-localizacao p{
-    font-family: 'Futura Std';
+    font-family: 'Encode Sans Semi Expanded';
     font-size: 18px;
     margin: 0 0 20px 0;
     color: #FFF;
@@ -2470,20 +2351,20 @@ ul.category-module-servicos li a p{
     margin-top: 30px;
 }
 .moduletable-newsletter .acymailing_introtext{
-    font-family: 'Futura Std';
+    font-family: 'Encode Sans Semi Expanded';
     font-size: 16px;
     margin: 0 0 20px 0;
     color: #FFF;
     line-height: 1.2;
 }
 .moduletable-newsletter .acymailing_introtext span{
-    font-family: 'Futura Std Book';
+    font-family: 'Encode Sans Semi Expanded';
 }
 
 .titulo-contato h2 {
     line-height: 1.2;
     color: #002a28;
-    font-family: 'Futura Std Book';
+    font-family: 'Encode Sans Semi Expanded';
     font-size: 30px;
     margin: 0 0 30px 0;
     text-align: center;
@@ -2503,7 +2384,7 @@ ul.category-module-servicos li a p{
     border: 0;
     background-color: #f1f1f1;
     color: #444;
-    font-family: 'Futura Std Book';
+    font-family: 'Encode Sans Semi Expanded';
     font-size: 18px;
     border-radius: 0;
 }
@@ -2514,7 +2395,7 @@ ul.category-module-servicos li a p{
     border: 0;
     background-color: #f1f1f1;
     color: #444;
-    font-family: 'Futura Std Book';
+    font-family: 'Encode Sans Semi Expanded';
     font-size: 18px;
     border-radius: 0;
     height: 180px;
@@ -2546,7 +2427,7 @@ ul.category-module-servicos li a p{
 .menuresp a {
     text-align: center;
     color: #000;
-    font-family: 'Futura Std Book';
+    font-family: 'Encode Sans Semi Expanded';
     font-size: 18px;
     text-decoration: none;
     margin: 0;
@@ -2560,6 +2441,51 @@ ul.category-module-servicos li a p{
 }
 .menuresp a img{
     display: none;
+}
+
+.img-intro-left {
+    float: left;
+    margin: 0 60px 10px 0;
+}
+
+.img-intro-right {
+    float: right;
+    margin: 0 0 10px 60px;
+}
+
+#livros {
+    width: 1170px;
+    margin: auto;
+    display: table;
+}
+
+#livros > div {
+    display: table;
+    border-bottom: 1px #CCC solid;
+    margin-bottom: 20px;
+}
+#livros > div:last-child{
+    border: 0;
+}
+
+#livros img{
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.btn-adquirir {
+    background-color: #b35773;
+    padding: 5px 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    display: table;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.btn-adquirir:hover {
+    background-color: #8f0141;
 }
 
 @media screen and (max-width: 1170px){

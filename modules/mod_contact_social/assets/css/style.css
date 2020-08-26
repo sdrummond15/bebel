@@ -32,14 +32,42 @@ ul.contact-social li:last-child {
 }
 
 ul.contact-social li a {
-    color: #58595b;
+    color: #FFF;
     font-weight: normal;
     text-decoration: none;
     font-size: 14px;
 }
 
 ul.contact-social li a:hover {
-    color: #888;
+    color: #8f0141;
+}
+
+ul.contact-social li a.instagram {
+    display: table;
+    width: 26px;
+    height: 25px;
+    background-color: #FFF;
+    margin-top: 1px ;
+    border-radius: 3px;
+}
+
+ul.contact-social li a.instagram:hover {
+    background-color: #8f0141;
+}
+
+ul.contact-social li a.instagram span{
+    display: table-cell;
+    margin: auto;
+    vertical-align: middle;
+}
+
+ul.contact-social li a.instagram i{
+    color: #d4005f;
+    font-size: 22px;
+    line-height: 0.8;
+    display: block;
+    text-align: center;
+    margin-left: 1px;
 }
 
 ul.contact-social li a.phone span {
@@ -56,7 +84,6 @@ ul.contact-social li a i {
 }
 
 ul.contact-social li a span {
-    font-weight: 600;
     font-size: 14px;
 }
 

@@ -56,6 +56,7 @@ abstract class ModArticlesCategoryHelper
 		// Prep for Normal or Dynamic Modes
 		$mode = $params->get('mode', 'normal');
 
+		$header_class = $params->get('header_class');
 		switch ($mode)
 		{
 			case 'dynamic' :
@@ -285,7 +286,6 @@ abstract class ModArticlesCategoryHelper
 			if ($show_introtext)
 			{
 				$item->introtext = JHtml::_('content.prepare', $item->introtext, '', 'mod_articles_category.content');
-				$item->introtext = self::_cleanIntrotext($item->introtext);
 			}
 
 			$item->displayIntrotext = $show_introtext ? self::truncate($item->introtext, $introtext_limit) : '';
