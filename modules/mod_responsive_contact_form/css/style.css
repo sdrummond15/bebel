@@ -1,10 +1,8 @@
 #contact {
     padding-bottom: 105px;
-    background: url("../../../images/bottom-section.png") no-repeat bottom;
 }
 
 #contact .contact {
-    background-color: rgba(57, 109, 0, 0.8);
     width: 100%;
     display: table;
 }
@@ -13,23 +11,33 @@
     width: 1170px;
     margin: auto;
     display: table;
-    padding-top: 40px;
-    margin-bottom: -20px;
 }
 
 #contact .contact > div fieldset {
-    max-width: 700px;
+    width: 100%;
+    max-width: 600px;
     margin: auto;
 }
 
 .input-80 {
     width: calc(100% - 24px);
-    padding: 5px 12px;
+    padding: 6px 12px;
     border: 0;
-    font-size: 20px;
-    color: #676565;
-    font-family: 'quicksandregular';
-    margin-bottom: 5px;
+    font-size: 16px;
+    color: #FFF;
+    font-family: 'Encode Sans Semi Expanded';
+    font-weight: 300;
+    margin-bottom: 30px;
+    background-color: transparent;
+    border-bottom: 1px solid #FFF;
+}
+
+textarea.input-80 {
+    border: 1px solid #FFF;
+}
+
+.input-80:focus {
+    outline: none;
 }
 
 #formResponse {
@@ -78,7 +86,7 @@ textarea {
     margin: 3px 0;
     color: #FFF;
     font-size: 14px;
-    font-family: 'quicksandregular';
+    font-family: 'Encode Sans Semi Expanded';
     display: none;
 }
 
@@ -93,4 +101,36 @@ textarea {
 
 #contact .contact > div fieldset .controls button[type=submit] {
     float: right;
+    background-color: #d28501;
+    padding: 10px 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    display: table;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 30px;
 }
+
+#contact .contact > div fieldset .controls button[type=submit]:hover {
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+textarea::placeholder,
+input::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #FFF;
+    font-style: oblique; 
+} 
+
+textarea:-ms-input-placeholder
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #FFF;
+    font-style: oblique; 
+} 
+
+textarea::-ms-input-placeholder
+input::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #FFF;
+    font-style: oblique; 
+} 

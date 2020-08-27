@@ -6,7 +6,7 @@
  * @license		GNU General Public License version 2 or later; see LICENSE.txt
  */
 defined('_JEXEC') or die('Restricted access');
-$LeftMenuOn = ($this->countModules('position-4') or $this->countModules('position-7'));
+$LeftMenuOn = ($this->countModules('position-7'));
 $RightMenuOn = ($this->countModules('position-6'));
 $TopNavOn = ($this->countModules('position-13'));
 $app = JFactory::getApplication();
@@ -25,11 +25,9 @@ $lang = JFactory::getLanguage();
 if ($menu->getActive() == $menu->getDefault($lang->getTag())) {
     $home = 1;
     $backhome = 'class="home-article"';
-    $backfooter = 'class="home-footer"';
 } else {
     $home = 0;
     $backhome = '';
-    $backfooter = '';
 }
 ?>
 
@@ -84,7 +82,7 @@ if ($menu->getActive() == $menu->getDefault($lang->getTag())) {
                 <div id="logo">
 
                     <?php if ($logo && $logoimage == 1) : ?>
-                        <a href="<?= ($home == 1 ) ? '#home' :$this->baseurl ?>">
+                        <a href="<?= ($home == 1) ? '#home' : $this->baseurl ?>">
                             <img src="<?php echo htmlspecialchars($logo); ?>" alt="<?php echo $sitename; ?>" />
                         </a>
                     <?php endif; ?>
@@ -155,53 +153,78 @@ if ($menu->getActive() == $menu->getDefault($lang->getTag())) {
 
         <!-- Content/Menu Wrap -->
         <div id="content-menu_wrap_bg" <?php echo $backhome; ?>>
-            <div id="content-menu_wrap">
-
-                <!-- Left Menu -->
-                <?php if ($LeftMenuOn) : ?>
-                    <div id="leftmenu">
-                        <jdoc:include type="modules" name="position-7" style="xhtml" />
-                        <jdoc:include type="modules" name="position-4" style="xhtml" />
-                    </div>
+            <?php if ($home == 1) : ?>
+                <div class="right-angle"></div>
+                <div id="padecendo-no-paraiso" class="section">
                 <?php endif; ?>
+                <div id="content-menu_wrap">
+
+                    <!-- Left Menu -->
+                    <?php if ($LeftMenuOn) : ?>
+                        <div id="leftmenu">
+                            <jdoc:include type="modules" name="position-7" style="xhtml" />
+
+                        </div>
+                    <?php endif; ?>
+
+                    <?php if ($this->countModules('position-4')) : ?>
+                        <div id="padecendo">
+                            <jdoc:include type="modules" name="position-4" style="xhtml" />
+                        </div>
+                    <?php endif; ?>
 
 
-                <!-- Contents -->
-                <?php
-                if ($LeftMenuOn and $RightMenuOn) :
-                    $w = 'w1';
-                elseif ($LeftMenuOn or $RightMenuOn) :
-                    $w = 'w2';
-                else :
-                    $w = 'w3';
-                endif;
-                ?>
-                <div id="content-<?php echo $w; ?>">
-                    <jdoc:include type="message" />
-                    <jdoc:include type="component" />
+                    <!-- Contents -->
+                    <?php
+                    if ($LeftMenuOn and $RightMenuOn) :
+                        $w = 'w1';
+                    elseif ($LeftMenuOn or $RightMenuOn) :
+                        $w = 'w2';
+                    else :
+                        $w = 'w3';
+                    endif;
+                    ?>
+                    <div id="content-<?php echo $w; ?>">
+                        <jdoc:include type="message" />
+                        <jdoc:include type="component" />
+                    </div>
+
+                    <?php if ($home == 1) : ?>
+                        <div id="noticias">
+                            <a href="index.php/noticias" class="btn btn-noticias">Todas as notícias</a>
+                        </div>
+                    <?php endif; ?>
+
+
+                    <!-- Right Menu -->
+                    <?php if ($RightMenuOn) : ?>
+                        <div id="rightmenu">
+                            <jdoc:include type="modules" name="position-6" style="xhtml" />
+                        </div>
+                    <?php endif; ?>
+
+
                 </div>
+                <?php if ($home == 1) : ?>
+                </div>
+            <?php endif; ?>
 
-
-                <!-- Right Menu -->
-                <?php if ($RightMenuOn) : ?>
-                    <div id="rightmenu">
-                        <jdoc:include type="modules" name="position-6" style="xhtml" />
+            <!-- Content Footer -->
+            <?php if ($this->countModules('position-3')) : ?>
+                <div id="footer_wrap" <?php echo $backfooter; ?>>
+                    <div id="<?= ($home == 1) ? 'clube-pecadoras' : 'footer' ?>" class="section">
+                        <jdoc:include type="modules" name="position-3" style="xhtml" />
                     </div>
-                <?php endif; ?>
+                </div>
+            <?php endif; ?>
 
-
-            </div>
+            <?php if ($home == 1) : ?>
+                <div class="left-angle"></div>
+            <?php endif; ?>
         </div>
 
 
-        <!-- Footer -->
-        <?php if ($this->countModules('position-3')) : ?>
-            <div id="footer_wrap" <?php echo $backfooter; ?>>
-                <div id="footer">
-                    <jdoc:include type="modules" name="position-3" />
-                </div>
-            </div>
-        <?php endif; ?>
+
 
         <!-- Units -->
         <?php if ($this->countModules('position-8')) : ?>
@@ -214,17 +237,23 @@ if ($menu->getActive() == $menu->getDefault($lang->getTag())) {
 
 
         <!-- Banner/Links -->
-        <?php if (($this->countModules('position-9')) || ($this->countModules('position-10')) || ($this->countModules('position-11'))) : ?>
+        <?php if (($this->countModules('position-9')) ||
+            ($this->countModules('position-10')) ||
+            ($this->countModules('position-11')) ||
+            ($this->countModules('position-14'))
+        ) : ?>
             <div id="box_wrap">
                 <div id="box_placeholder">
-                    <div id="box1">
-                        <jdoc:include type="modules" name="position-9" style="xhtml" />
-                    </div>
-                    <div id="box2">
-                        <jdoc:include type="modules" name="position-10" style="xhtml" />
-                    </div>
-                    <div id="box3">
-                        <jdoc:include type="modules" name="position-11" style="xhtml" />
+                    <div id="minhas-colunas" class="section">
+                        <div id="box1">
+                            <jdoc:include type="modules" name="position-9" style="xhtml" />
+                        </div>
+                        <div id="box2">
+                            <jdoc:include type="modules" name="position-10" style="xhtml" />
+                        </div>
+                        <div id="box3">
+                            <jdoc:include type="modules" name="position-11" style="xhtml" />
+                        </div>
                     </div>
                     <div id="box4">
                         <jdoc:include type="modules" name="position-14" style="xhtml" />
@@ -296,8 +325,8 @@ if ($menu->getActive() == $menu->getDefault($lang->getTag())) {
 
                 /**** PADDING PARA MENU ****/
                 var menuH = jQuery('#header_wrap').height();
-                jQuery("#bebel-soares, #livros, #box1, #modslide_equipes").css('padding-top', menuH + 40);
-                jQuery("#bebel-soares, #livros").css('margin-top', (menuH) * (-1));
+                jQuery("#bebel-soares, #livros, #padecendo-no-paraiso, #clube-pecadoras, #minhas-colunas, #fale-comigo").css('padding-top', menuH + 40);
+                jQuery("#bebel-soares, #livros, #padecendo-no-paraiso, #clube-pecadoras, #minhas-colunas, #fale-comigo").css('margin-top', (menuH) * (-1));
                 /**** FIM PADDING PARA MENU ****/
 
 
@@ -310,7 +339,7 @@ if ($menu->getActive() == $menu->getDefault($lang->getTag())) {
                     jQuery('html, body').animate({
                         scrollTop: jQuery('#' + alvo).offset().top
                     }, 500);
-                    if(jQuery(this).parent('div').attr('id') == 'logo'){
+                    if (jQuery(this).parent('div').attr('id') == 'logo') {
                         jQuery('#topmenu .menu-home').find('a').parent('li').removeClass('active');
                     }
                     return false;

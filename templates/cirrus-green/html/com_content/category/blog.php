@@ -62,32 +62,26 @@ $cparams = JComponentHelper::getParams('com_media');
     <?php endif; ?>
     <?php
     $introcount = (count($this->intro_items));
-    $counter = 0;
     ?>
     <?php if (!empty($this->intro_items)) : ?>
 
+        <?php $countArticle = 0 ?>
         <?php foreach ($this->intro_items as $key => &$item) : ?>
             <?php
-            $key = ($key - $leadingcount) + 1;
-            $rowcount = (((int) $key - 1) % (int) $this->columns) + 1;
-            $row = $counter / $this->columns;
-
-            if ($rowcount == 1) :
+                $row = $countArticle % $this->columns;
                 ?>
-                <div class="items-row cols-<?php echo (int) $this->columns; ?> <?php echo 'row-' . $row; ?>">
-                <?php endif; ?>
-                <article class="item column-<?php echo $rowcount; ?><?php echo $item->state == 0 ? ' system-unpublished' : null; ?>">
+                <div class="items-row cols-<?php echo (int) $this->columns; ?> <?php echo 'row-' . $row; ?>" 
+                style="width: calc(<?= ($this->columns > 0) ? 100 / $this->columns : 100 ?>% - 15px); 
+                        margin-right: <?= ($row == $this->columns - 1) ? 0 : 30 ?>px;">
+               
                     <?php
                     $this->item = &$item;
                     echo $this->loadTemplate('item');
                     ?>
-                </article>
-                <?php $counter++; ?>
-                <?php if (($rowcount == $this->columns) or ( $counter == $introcount)) : ?>
                     <span class="row-separator"></span>
                 </div>
 
-            <?php endif; ?>
+            <?php $countArticle++; ?>
         <?php endforeach; ?>
 
 

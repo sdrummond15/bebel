@@ -184,7 +184,7 @@ body {
     font-family: 'Encode Sans Semi Expanded', Verdana, Arial;
     font-size: 18px;
     line-height: 1.4em;
-    color: #000;
+    color: #444242;
 }
 
 a {
@@ -213,7 +213,7 @@ p {
 
 h1 {
     font-family: 'Encode Sans Semi Expanded', Verdana, Arial;
-    color: #000;
+    color: #444242;
     font-size: 30px;
     line-height:1.2;
     margin-bottom: 20px;
@@ -221,27 +221,27 @@ h1 {
 }
 
 h1 a {
-    color: #90c140;
+    color: #444242;
     text-decoration: none;
 }
 
 h1 a:hover {
-    color: #000000;
+    color: #000;
     text-decoration: none;
 }
 
 
 h2 {
-    font-family: 'Encode Sans Semi Expanded', Verdana, Arial;
-    color: #000;
+    color: #444242;
     font-size: 24px;
     line-height:1.2;
-    margin-bottom: 10px;	
+    margin-bottom: 10px;
+    font-weight: 700;	
 }
 
 h2 a,
 h2 a:hover{
-    color: #000;
+    color: #444242;
     text-decoration: none;
 }
 
@@ -378,8 +378,15 @@ hr {
     background-color: #058070;
 }
 
+p.readmore {
+    text-align: right;
+}
+
 .readmore a {
-    font-weight: 700;
+    font-weight: 900;
+    color: #be1469;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
 /** Header **/
@@ -528,7 +535,7 @@ hr {
     text-decoration: none;
     border: 0;
     background-color: #d4005f;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 #topmenu li { 
@@ -611,11 +618,25 @@ hr {
     min-height: 400px;
     width: 100%;
     display: table;
+    margin: -70px 0;
+}
+
+#content-menu_wrap_bg .right-angle,
+#content-menu_wrap_bg .left-angle {
+    background-color: #f7f7f8;
+}
+
+#padecendo-no-paraiso {
+    width: 100%;
+    display: table;
+    background-color: #f7f7f8;
 }
 
 #content-menu_wrap {
     width: 1170px;
     margin: auto;
+    position: relative;
+    z-index: 2;
 }
 
 /** Angulos **/
@@ -631,6 +652,10 @@ hr {
     width: 100%;
     display: table;
     height: 70px;
+}
+
+.blog-home .img-intro-left{
+    display: none;
 }
 
 /** Breadcrumbs **/
@@ -786,9 +811,9 @@ hr {
 #content-w3 {  /** no menu visible **/
     width: 1170px;
     float: left;
-    padding-top: 70px;
+    padding-top: 40px;
     overflow: hidden;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 
 #content-w1 h3,
@@ -839,6 +864,7 @@ hr {
     float: right;
     margin-top: 20px;
 }
+
 .conheca a{
     font-family: 'Encode Sans Semi Expanded';
     font-size: 18px;
@@ -849,100 +875,34 @@ hr {
     background-color: #00675a;
     font-weight: normal;
 }
+
 .conheca a:hover{
     background-color: #058070;
 }
 
 #content-bottom {
-    width: 110%;
-    top: -50px;
-    left: -5%;
-    position: relative;
-    background: #f40062;
-    transform: rotate(-2deg);
-    -ms-transform: rotate(-2deg);
-    -webkit-transform: rotate(-2deg);
+    width: 100%;
     display: table;
-    overflow: hidden;
-    z-index: 0;
-    margin-bottom: -200px;
 }
-.content-bottom{
-    width: 91%;
-    margin: 0 auto -35px auto;
-    padding: 50px 0 20px 0;
-    transform: rotate(2deg);
-    -ms-transform: rotate(2deg);
-    -webkit-transform: rotate(2deg);
-    background-attachment: fixed;
+
+.content-bottom {
+    width: 100%;
+    background: #f7f7f8;
+    display: table;
 }
-.custom-padecendo{
+
+.custom-padecendo {
     width: 1170px;
     margin: auto;
 }
-.custom-padecendo p{
-    font-family: 'Encode Sans Semi Expanded';
-    font-size: 20px;
-    color: #000;
-    margin: 20px;
-}
-.custom-padecendo p span{
-    font-size: 36px;
-}
-.custom-padecendo .contrate{
-    display: table;
-    margin: 0 auto 30px auto;
-}
-.custom-padecendo .contrate a{
-    font-family: 'Encode Sans Semi Expanded';
-    font-size: 18px;
+
+.custom-padecendo p {
     text-align: center;
-    color: #FFF;
-    padding: 10px 20px;
-    text-decoration: none;
-    background-color: #00675a;
-    font-weight: normal;
-}
-.custom-padecendo .contrate a:hover{
-    background-color: #058070;
 }
 
-
-
-
-.custom-pecadoras{
-    width: 1170px;
-    margin: auto;
+.custom-padecendo p img {
+    width: 250px;
 }
-.custom-pecadoras p{
-    font-family: 'Encode Sans Semi Expanded';
-    font-size: 20px;
-    color: #000;
-    margin: 20px;
-}
-.custom-pecadoras p span{
-    font-size: 36px;
-}
-.custom-pecadoras .contrate{
-    display: table;
-    margin: 0 auto 30px auto;
-}
-.custom-pecadoras .contrate a{
-    font-family: 'Encode Sans Semi Expanded';
-    font-size: 18px;
-    text-align: center;
-    color: #FFF;
-    padding: 10px 20px;
-    text-decoration: none;
-    background-color: #00675a;
-    font-weight: normal;
-}
-.custom-pecadoras .contrate a:hover{
-    background-color: #058070;
-}
-
-
-
 
 ul.actions {
     margin: 0;
@@ -1373,8 +1333,9 @@ p.counter {
 }
 
 .items-row {
-    overflow:hidden;
-    margin-bottom:10px !important;
+    overflow: hidden;
+    margin-bottom: 10px !important;
+    float: left;
 }
 
 .column-2 {
@@ -1870,17 +1831,15 @@ a.feed-link {
 /** Footer **/
 
 #footer_wrap {
-    background-color: #fafafa;
-    padding-bottom: 20px;
-    min-width: 960px;
+    width: 100%;
+    display: table;
+    background-color: #f7f7f8;
 }
 
 #footer {
-    clear: both;
-    width: 900px;
+    width: 1170px;
+    display: table;
     margin: auto;
-    padding-top: 26px;
-    background-color: #fafafa;
 }
 
 #footer div.custom hr {
@@ -1888,6 +1847,34 @@ a.feed-link {
     color: rgb(226,226,226);
     background-color: rgb(226,226,226);
     height: 1px
+}
+
+.moduletable-pecadoras {
+    width: 1170px;
+    display: table;
+    margin: auto;
+    padding: 0 0 40px 0;
+}
+
+.moduletable-pecadoras h3 {
+    font-weight: 900;
+    color: #be1469;
+    text-transform: uppercase;
+    font-size: 24px;
+    border-bottom: 1px solid #be1469;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    width: 75%;
+}
+
+.img-clube-pecadoras {
+    float: right;
+    margin: -50px 0 10px 0;
+}
+
+.download-app {
+    text-align: center;
+    margin-top: 30px;
 }
 
 #copyright {
@@ -1921,7 +1908,7 @@ a.feed-link {
 #box_wrap {
     width: 100%;
     display: table;
-    background-color: #e98201;
+    background-color: #d28501;
     margin-top: -70px;
     padding-top: 100px;
 }
@@ -1932,30 +1919,24 @@ a.feed-link {
     display: table;
 }
 
-#box1,
-#box2,
-#box3,
-#box4{
-    width: 30%;
-    margin: auto;
-    padding: 0;
-    text-align: center;
-}
-.moduletable-menu-map ul{
-    list-style: none;
-    padding: 0;
-    margin: 30px 0;
-}
-.moduletable-menu-map ul li a{
-    color: #FFF;
-    line-height: 1.6;
-    text-decoration: none;
-    padding: 0 !important;
-}
-.moduletable-menu-map ul li a img{
-    display: none;
+#box1 {
+    display: table;
+    width: 100%;
 }
 
+#box2,
+#box3 {
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    float: left;
+}
+
+
+#minhas-colunas{
+    display: table;
+    width: 100%;
+}
 /** Editor **/
 
 #adminForm.form-validate fieldset {
@@ -2155,7 +2136,7 @@ body.contentpane h2 a,
 body.contentpane h3 a,
 body.contentpane h4 a,
 body.contentpane h5 a {
-    color: #000;
+    color: #444242;
 }
 
 body.contentpane a:hover {
@@ -2227,9 +2208,6 @@ ul.category-module-servicos li a p{
     width: 70%;
 }
 
-.home-article{
-    background-color: #e0b901;
-}
 .blog-featured-destaque-home h1{
     font-family: 'Encode Sans Semi Expanded';
     font-size: 30px;
@@ -2280,27 +2258,22 @@ ul.category-module-servicos li a p{
 }
 /*RODAPE*/
 
-.menu-menu-map{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.menu-menu-map li a{
-    font-family: 'Encode Sans Semi Expanded';
-    font-size: 24px;
+.moduletable-minhas-colunas h3{
+    text-align: center;
+    font-weight: 900;
     color: #FFF;
-    text-decoration: none;
-    padding-bottom: 10px;
-    display: table;
-    margin: auto;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 .moduletable-contato h3{
-    font-family: 'Encode Sans Semi Expanded';
-    font-size: 24px;
+    text-align: center;
+    font-weight: 900;
     color: #FFF;
-    margin: 30px 0;
+    font-size: 24px;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 .custom-contato p{
@@ -2374,9 +2347,11 @@ ul.category-module-servicos li a p{
     float: left;
     padding: 10px 2%;
 }
-.contact-form input::placeholder{
+
+.contact-form input::placeholder {
 
 }
+
 .contact-form input {
     width: 96%;
     padding: 8px 2%;
@@ -2472,6 +2447,7 @@ ul.category-module-servicos li a p{
     box-shadow: 0 0 5px rgba(0,0,0,0.3);
 }
 
+.btn-noticias,
 .btn-adquirir {
     background-color: #b35773;
     padding: 5px 30px;
@@ -2484,6 +2460,8 @@ ul.category-module-servicos li a p{
     font-weight: bold;
     margin-top: 30px;
 }
+
+.btn-noticias:hover,
 .btn-adquirir:hover {
     background-color: #8f0141;
 }

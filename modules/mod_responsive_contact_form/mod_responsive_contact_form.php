@@ -177,8 +177,9 @@ if (isset($_POST['sbutton'])) {
     }
 }
 ?>
-<div class="linha">&nbsp;</div>
+<div id="fale-comigo" class="section">
 <section id="contact">
+    <h3><?php print_r($module->title); ?></h3>
     <div class="contact">
         <div>
             <script type="text/javascript">
@@ -235,8 +236,6 @@ if (isset($_POST['sbutton'])) {
 
                         <!-- Phone Field -->
                         <div class="control-group">
-                            <label class="control-label"
-                                   for="inputPhone"><?php echo $params->get('tfield_name'); ?></label>
                             <div class="controls">
                                 <input class="input-80" name="phone" type="text" id="inputPhone"
                                        placeholder="<?php echo $params->get('tfield_name'); ?>" <?php echo $params->get('phone_req'); ?>>
@@ -249,8 +248,6 @@ if (isset($_POST['sbutton'])) {
 
                         <!-- Subject Field -->
                         <div class="control-group">
-                            <label class="control-label"
-                                   for="selectSubject"><?php echo $params->get('fofield_name'); ?></label>
                             <div class="controls">
                                 <?php if ($params->get('subject_type') == 1) { ?>
                                     <select class="input-80" id="selectSubject" name="type">
@@ -322,7 +319,7 @@ if (isset($_POST['sbutton'])) {
         </div>
     </div>
 </section>
-
+</div>
 <?php
 $app = JFactory::getApplication();
 $menu = $app->getMenu();
