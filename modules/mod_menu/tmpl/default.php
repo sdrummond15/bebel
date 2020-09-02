@@ -74,12 +74,13 @@ foreach ($list as $i => &$item)
 	// Render the menu item.
 	switch ($item->type) :
 		case 'separator':
-		case 'url':
 		case 'component':
 		case 'heading':
 			require JModuleHelper::getLayoutPath('mod_menu', 'default_' . $item->type);
 			break;
-
+		case 'url':
+			require JModuleHelper::getLayoutPath('mod_menu', 'default_url_external');
+			break;
 		default:
 			require JModuleHelper::getLayoutPath('mod_menu', 'default_url');
 			break;

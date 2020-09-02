@@ -218,9 +218,7 @@ if ($menu->getActive() == $menu->getDefault($lang->getTag())) {
                 </div>
             <?php endif; ?>
 
-            <?php if ($home == 1) : ?>
-                <div class="left-angle"></div>
-            <?php endif; ?>
+            <div class="left-angle <?= ($home == 0)? 'branco' : ''?>"></div>
         </div>
 
 
@@ -315,7 +313,7 @@ if ($menu->getActive() == $menu->getDefault($lang->getTag())) {
 
                 var menu = jQuery('#header_wrap').height();
 
-                jQuery('#topnav_wrap').css("margin-top", menu);
+                jQuery('#header_wrap').next().css("margin-top", menu);
 
                 if (largura <= 590) {
                     jQuery('.custom-endereco iframe').css("pointer-events", "none");
@@ -367,6 +365,9 @@ if ($menu->getActive() == $menu->getDefault($lang->getTag())) {
                     });
                 });
                 /**** FIM EFEITO MENU ****/
+
+
+                jQuery('.blog-noticias .img-intro-left').height(parseInt(jQuery('.blog-noticias .img-intro-left').width() * 0.75) );
 
             }).trigger('resize');
         });

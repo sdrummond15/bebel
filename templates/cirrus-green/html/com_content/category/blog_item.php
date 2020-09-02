@@ -14,6 +14,13 @@ $app = JFactory::getApplication();
 $canEdit = $this->item->params->get('access-edit');
 
 JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
+
+
+$app = JFactory::getApplication();
+$menu = $app->getMenu();
+$lang = JFactory::getLanguage();
+$active = $menu->getActive();
+
 ?>
 
 
@@ -125,22 +132,27 @@ JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
 <?php endif; ?>
 <?php  if (isset($images->image_intro) and !empty($images->image_intro)) : ?>
 	<?php $imgfloat = (empty($images->float_intro)) ? $params->get('float_intro') : $images->float_intro; ?>
-	<div class="img-intro-<?php echo htmlspecialchars($imgfloat); ?>">
-	<img
+	<div class="img-intro img-intro-<?php echo htmlspecialchars($imgfloat); ?>">
+	<?php if($active->home == 1): ?>
+		<img
 		<?php if ($images->image_intro_caption):
 			echo 'class="caption"'.' title="' .htmlspecialchars($images->image_intro_caption) .'"';
 		endif; ?>
 		src="<?php echo htmlspecialchars($images->image_intro); ?>" alt="<?php echo htmlspecialchars($images->image_intro_alt); ?>"/>
+	<?php else: ?>
+		<span style="background-image: url(<?= htmlspecialchars($images->image_intro) ?>);"></span>
+	<?php endif; ?>
 	</div>
 <?php endif; ?>
 <?php echo $this->item->introtext; ?>
 
 <?php if ($params->get('show_readmore') && $this->item->readmore) :
+	$menu = JFactory::getApplication()->getMenu();
+	$active = $menu->getActive();
 	if ($params->get('access-view')) :
 		$link = JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->item->catid));
 	else :
-		$menu = JFactory::getApplication()->getMenu();
-		$active = $menu->getActive();
+		
 		$itemId = $active->id;
 		$link1 = JRoute::_('index.php?option=com_users&view=login&Itemid=' . $itemId);
 		$returnURL = JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug));

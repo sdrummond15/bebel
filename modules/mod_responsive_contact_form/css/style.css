@@ -28,17 +28,35 @@
     font-family: 'Encode Sans Semi Expanded';
     font-weight: 300;
     margin-bottom: 30px;
-    background-color: transparent;
+    background-color: transparent !important;
     border-bottom: 1px solid #FFF;
 }
 
 textarea.input-80 {
     border: 1px solid #FFF;
+    background-color: transparent !important;
 }
 
 .input-80:focus {
     outline: none;
+    background-color: transparent !important;
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+-webkit-text-fill-color: #fff !important;
+-webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0) inset !important;
+transition: background-color 5000s ease-in-out 0s !important;
+}
+
 
 #formResponse {
     font-weight: bold;

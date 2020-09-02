@@ -71,8 +71,11 @@ $cparams = JComponentHelper::getParams('com_media');
                 $row = $countArticle % $this->columns;
                 ?>
                 <div class="items-row cols-<?php echo (int) $this->columns; ?> <?php echo 'row-' . $row; ?>" 
-                style="width: calc(<?= ($this->columns > 0) ? 100 / $this->columns : 100 ?>% - 15px); 
-                        margin-right: <?= ($row == $this->columns - 1) ? 0 : 30 ?>px;">
+                <?php if ($this->columns > 1): ?>
+                style="width: calc(<?= 100 / $this->columns ?>% - 15px); 
+                        margin-right: <?= ($row == $this->columns - 1) ? 0 : 30 ?>px;"
+                <?php endif; ?>
+                        >
                
                     <?php
                     $this->item = &$item;
