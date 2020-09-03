@@ -53,10 +53,12 @@ ul.contact-social-footer.footer-contato li {
 
 ul.contact-social-footer.footer-contato li a {
     font-size: 16px;
+    display: table;
 }
 
 ul.contact-social-footer li {
-    display: inline-block;
+    display: table;
+    float: left;
     padding: 0 3px;
 }
 
@@ -67,7 +69,8 @@ ul.contact-social-footer li a {
 }
 
 ul.contact-social-footer li a:hover {
-    font-weight: 500;
+    color: #e8e8e8;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
 
 ul.contact-social-footer li a i {
@@ -77,4 +80,45 @@ ul.contact-social-footer li a i {
 
 ul.contact-social-footer li a span {
     margin-left: 10px;
+}
+
+ul.contact-social-footer li a.instagram {
+    display: table;
+    width: 32px;
+    height: 32px;
+    background-color: #FFF;
+    margin-top: 1px ;
+    border-radius: 3px;
+}
+
+ul.contact-social-footer li a.instagram:hover {
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    background-color: #e8e8e8;
+}
+
+ul.contact-social-footer li a.instagram span{
+    display: table-cell;
+    margin: auto;
+    vertical-align: middle;
+}
+
+ul.contact-social-footer li a.instagram i{
+    color: #d28501;
+    font-size: 26px;
+    line-height: 0.8;
+    display: block;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.phone,
+.email {
+    display: table;
+    margin: auto;
+    font-weight: 700;
+}
+
+.phone a:hover,
+.email a:hover{
+    color: #e8e8e8;
 }

@@ -2401,14 +2401,27 @@ ul.category-module-servicos li a p{
     display: none;
 }
 
+.img-fulltext-left,
 .img-intro-left {
     float: left;
     margin: 0 60px 10px 0;
 }
-
+.img-fulltext-right,
 .img-intro-right {
     float: right;
     margin: 0 0 10px 60px;
+}
+
+.img-fulltext {
+    width: 25%;
+}
+
+.img-fulltext img {
+    width: 100%;
+}
+
+.item-page-noticias h2{
+    margin-bottom: 30px;
 }
 
 #livros {
@@ -2548,9 +2561,7 @@ ul.category-module-servicos li a p{
     .moduletable-banner {
         background-size: 100% 100%;
     }
-    .item-page-empresa img{
-        width: 250px;
-    }
+
     #leftmenu{
         width: 100%;
         margin: 0;
@@ -2636,9 +2647,7 @@ ul.category-module-servicos li a p{
     .customcabecalho address a{
         font-size: 14px;
     }
-    .item-page-empresa img{
-        width: 100%;
-    }
+    
     #leftmenu ul li, #rightmenu ul li {
         width: 96%;
         padding: 10px 2%;
