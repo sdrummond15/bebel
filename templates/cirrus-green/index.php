@@ -218,7 +218,7 @@ if ($menu->getActive() == $menu->getDefault($lang->getTag())) {
                 </div>
             <?php endif; ?>
 
-            <div class="left-angle <?= ($home == 0)? 'branco' : ''?>"></div>
+            <div class="left-angle <?= ($home == 0) ? 'branco' : '' ?>"></div>
         </div>
 
 
@@ -235,13 +235,14 @@ if ($menu->getActive() == $menu->getDefault($lang->getTag())) {
 
 
         <!-- Banner/Links -->
-        <?php if (($this->countModules('position-9')) ||
-            ($this->countModules('position-10')) ||
-            ($this->countModules('position-11')) ||
-            ($this->countModules('position-14'))
-        ) : ?>
-            <div id="box_wrap">
-                <div id="box_placeholder">
+
+        <div id="box_wrap">
+            <div id="box_placeholder">
+                <?php if (
+                    ($this->countModules('position-9')) ||
+                    ($this->countModules('position-10')) ||
+                    ($this->countModules('position-11'))
+                ) : ?>
                     <div id="minhas-colunas" class="section">
                         <div id="box1">
                             <jdoc:include type="modules" name="position-9" style="xhtml" />
@@ -253,12 +254,13 @@ if ($menu->getActive() == $menu->getDefault($lang->getTag())) {
                             <jdoc:include type="modules" name="position-11" style="xhtml" />
                         </div>
                     </div>
-                    <div id="box4">
-                        <jdoc:include type="modules" name="position-14" style="xhtml" />
-                    </div>
+                <?php endif; ?>
+                <div id="box4">
+                    <jdoc:include type="modules" name="position-14" style="xhtml" />
                 </div>
             </div>
-        <?php endif; ?>
+        </div>
+
 
     </div>
 
@@ -367,7 +369,7 @@ if ($menu->getActive() == $menu->getDefault($lang->getTag())) {
                 /**** FIM EFEITO MENU ****/
 
 
-                jQuery('.blog-noticias .img-intro-left').height(parseInt(jQuery('.blog-noticias .img-intro-left').width() * 0.75) );
+                jQuery('.blog-noticias .img-intro-left').height(parseInt(jQuery('.blog-noticias .img-intro-left').width() * 0.75));
 
             }).trigger('resize');
         });
