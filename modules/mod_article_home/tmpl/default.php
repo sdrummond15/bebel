@@ -13,27 +13,32 @@ $sufixo = '';
 if ($params->get('moduleclass_sfx')) {
     $sufixo = '-' . $params->get('moduleclass_sfx');
 }
+$target = 'target="_blank"';
 ?>
 <div id="article-home" class="article-home<?php echo $sufixo; ?>">
     <?php foreach ($article as $article): ?>
+        <?php if(!empty(strpos('http',$link))) {
+            $link = JRoute::_("index.php?Itemid={$link}");
+            $target = '';
+        }  ?>
         <?php $images = json_decode($article->images);?>
         <div class="article-home">
             <div class="description">
                 <?php if($images->image_intro): ?>
                     
                 <div class="img-single-article">
-                    <a href="<?php echo JRoute::_("index.php?Itemid={$link}"); ?>">
+                    <a href="<?= $link ?>" <?= $target ?>>
                         <span style="background-image: url('<?= $images->image_intro ?>');" ></span>
                     </a>
                 </div>
                 <?php endif; ?>
                 <h1>
-                <a href="<?php echo JRoute::_("index.php?Itemid={$link}"); ?>">
+                <a href="<?= $link ?>" <?= $target ?>>
                     <?= $article->title ?>
                 </a>
                 </h1>
                 <div class="text-description">
-                <a href="<?php echo JRoute::_("index.php?Itemid={$link}"); ?>">
+                <a href="<?= $link ?>" <?= $target ?>>
                     <?= $article->introtext ?>
                     </a>
                 </div>

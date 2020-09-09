@@ -403,6 +403,8 @@ p.readmore {
 #header {
     width: 1170px;
     margin: auto;
+    display: table;
+    position: relative;
 }
 
 #logo {
@@ -487,6 +489,7 @@ p.readmore {
 /** Topmenu (added multi-level support v1.1) **/
 .menutop {
     float: right;
+    position: relative;
 }
 
 #topmenu_wrap {
@@ -840,6 +843,7 @@ p.readmore {
     background: url('../../../images/bebel_soares.jpg') no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: right;
 }
 
 .livro{
@@ -1864,6 +1868,11 @@ a.feed-link {
 .img-clube-pecadoras {
     float: right;
     margin: -50px 0 10px 0;
+    width: auto;
+}
+
+.img-clube-pecadoras img{
+    max-width: 100%;
 }
 
 .download-app {
@@ -2363,25 +2372,37 @@ ul.category-module-servicos li a p{
 }
 
 .gotomenu{
-    padding-top: 46px;
     visibility: hidden;
+    position: absolute;
+    right: 2%;
+    bottom: 5px;
 }
-#gotomenu{
-    text-align: right;
-    margin-right: 20px;
+
+#gotomenu {
+    padding: 3px 8px 2px 8px;
+    border-radius: 5px;
+    background-color: #d4005f;
+    cursor: pointer;
 }
+
+#gotomenu i {
+    font-size: 24px;
+    color: #FFF;
+    vertical-align: text-bottom;
+}
+
 .menuresp{
     visibility: hidden;
     width: 100%;
-    position: absolute;
-    left: 0;
 }
+
 .menuresp ul{
     list-style: none;
-    padding: 0;
+    padding: 10px 0 0 0;
     margin: 0;
     background-color: #FFF;
 }
+
 .menuresp a {
     text-align: center;
     color: #000;
@@ -2389,14 +2410,28 @@ ul.category-module-servicos li a p{
     font-size: 18px;
     text-decoration: none;
     margin: 0;
-    padding: 8px 0;
+    padding: 5px 0;
     width: 100%;
     display: table;
 }
+
 .menuresp a:hover{
-    background-color: #00675a;
+    background-color: #d4005f;
     color: #FFF;
 }
+
+.menuresp li.active {
+    background-color: #d4005f;
+}
+.menuresp li.active a,
+.menuresp li.active a:hover {
+    color: #FFF;
+    text-decoration: none;
+    border: 0;
+    background-color: #d4005f;
+    font-weight: 500;
+}
+
 .menuresp a img{
     display: none;
 }
@@ -2406,6 +2441,7 @@ ul.category-module-servicos li a p{
     float: left;
     margin: 0 60px 10px 0;
 }
+
 .img-fulltext-right,
 .img-intro-right {
     float: right;
@@ -2462,17 +2498,14 @@ ul.category-module-servicos li a p{
     background-color: #8f0141;
 }
 
-@media screen and (max-width: 1170px){
-    #search{
-        width: 96%;
-    }
-    #header{
-        width: 96%;
-    }
-    .custom-empresa{
-        width: 86%;
-    }
-    .custom-frase{
+@media screen and (max-width: 1200px){
+    #search,
+    #header,
+    #bebel-soares,
+    #livros,
+    .moduletable-pecadoras,
+    .custom-padecendo,
+    #contact .contact > div {
         width: 96%;
     }
     #content-w3{
@@ -2502,7 +2535,27 @@ ul.category-module-servicos li a p{
     #content-w2{
         width: 70%;
     }
+    
+    .moduletable-pecadoras h3 {
+        width: 100%;
+    }
+
+    .img-clube-pecadoras {
+        margin: 40px 0 0 20px;
+        width: 25%;
+    }
+
 }
+
+@media screen and (max-width: 1024px){
+
+    #logo a img {
+        margin: 5px 15px;
+        height: 80px;
+    }
+
+}
+
 @media screen and (max-width: 768px){
     p{
         font-size: 16px;
@@ -2616,11 +2669,33 @@ ul.category-module-servicos li a p{
     .contact-form textarea{
         font-size: 16px;
     }
+
+    .img-fulltext,
+    .img-fulltext-left, 
+    .img-intro-left,
+    .img-fulltext-right, 
+    .img-intro-right,
+    .blog-noticias .img-intro-left,
+    .blog-noticias .img-intro-right,
+    .blog-noticias .items-row:nth-child(2) .img-intro {
+        width: 75%;
+        display: table;
+        overflow: hidden;
+        margin: 10px auto 20px auto;
+        float: none;
+    }
+
+    #livros .img-intro-left{
+        float: left;
+        margin: 0 20px 10px 0;
+        width: 30%;
+    }
+
+    #livros img {
+        max-width: 100%;
+    }
 }
 @media screen and (max-width: 600px){
-    #topnav_wrap{
-        margin-top: 130px !important;
-    }
     .modservicos{
         padding-top: 120px;
         margin-top: -120px;
@@ -2665,5 +2740,10 @@ ul.category-module-servicos li a p{
         float: none;
         margin: auto;
         display: table;
+    }
+
+    #logo a img {
+        margin: 5px 15px;
+        height: 70px;
     }
 }

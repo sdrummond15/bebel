@@ -105,16 +105,15 @@ if ($menu->getActive() == $menu->getDefault($lang->getTag())) {
                             <jdoc:include type="modules" name="position-1" />
                         </div>
                     </div>
-
-                    <div class="gotomenu">
-                        <div id="gotomenu">
-                            <img src="images/menu.png" />
-                        </div>
-                    </div>
-                    <div class="menuresp">
-                        <jdoc:include type="modules" name="position-1" />
+                </div>
+                <div class="gotomenu">
+                    <div id="gotomenu">
+                        <i class="fa fa-bars smallmenu" aria-hidden="true"></i>
                     </div>
                 </div>
+            </div>
+            <div class="menuresp">
+                <jdoc:include type="modules" name="position-1" />
             </div>
         </div>
 
@@ -212,7 +211,7 @@ if ($menu->getActive() == $menu->getDefault($lang->getTag())) {
             <!-- Content Footer -->
             <?php if ($this->countModules('position-3')) : ?>
                 <div id="footer_wrap" <?php echo $backfooter; ?>>
-                    <div id="<?= ($home == 1) ? 'clube-pecadoras' : 'footer' ?>" class="section">
+                    <div id="<?= ($home == 1) ? 'clube-familia' : 'footer' ?>" class="section">
                         <jdoc:include type="modules" name="position-3" style="xhtml" />
                     </div>
                 </div>
@@ -325,22 +324,23 @@ if ($menu->getActive() == $menu->getDefault($lang->getTag())) {
 
                 /**** PADDING PARA MENU ****/
                 var menuH = jQuery('#header_wrap').height();
-                jQuery("#bebel-soares, #livros, #padecendo-no-paraiso, #clube-pecadoras, #minhas-colunas, #fale-comigo").css('padding-top', menuH + 40);
-                jQuery("#bebel-soares, #livros, #padecendo-no-paraiso, #clube-pecadoras, #minhas-colunas, #fale-comigo").css('margin-top', (menuH) * (-1));
+                jQuery("#bebel-soares, #livros, #padecendo-no-paraiso, #clube-familia, #minhas-colunas, #fale-comigo").css('padding-top', menuH + 40);
+                jQuery("#bebel-soares, #livros, #padecendo-no-paraiso, #clube-familia, #minhas-colunas, #fale-comigo").css('margin-top', (menuH) * (-1));
                 /**** FIM PADDING PARA MENU ****/
 
 
 
                 /**** SCROLL MENU SLOW****/
                 var itemMenuId = '';
-                jQuery('#topmenu a, #logo a').click(function() {
+                jQuery('#topmenu a, #logo a, .menuresp a').click(function() {
+                    jQuery('.menuresp').slideUp(1000);
                     itemMenuId = jQuery(this).attr('href');
                     var alvo = jQuery(this).attr('href').split('#').pop();
                     jQuery('html, body').animate({
                         scrollTop: jQuery('#' + alvo).offset().top
                     }, 500);
                     if (jQuery(this).parent('div').attr('id') == 'logo') {
-                        jQuery('#topmenu .menu-home').find('a').parent('li').removeClass('active');
+                        jQuery('#topmenu .menu-home, .menuresp').find('a').parent('li').removeClass('active');
                     }
                     return false;
                 });
